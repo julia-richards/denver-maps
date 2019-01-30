@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import neighborhoods from "./neighborhoods.json";
-
-console.log(neighborhoods);
+import { Map as LeafletMap, TileLayer, Polygon } from "react-leaflet";
 
 const NeighborhoodWriteup = ({ name, writeUp, keyFeats }) => {
   return (
     <React.Fragment>
-      <article>
+      <article className="write-up">
         <h2>{name}</h2>
         <p>{writeUp}</p>
       </article>
-      <aside>
+      <aside className="key-features">
         <h4>Key Features</h4>
         <ul>
           {keyFeats.map((feature, i) => (
@@ -30,6 +28,7 @@ class App extends Component {
 
   handleNeighborhoodClick = neighborhood => {
     this.setState({ activeNeighborhood: neighborhood });
+    document.title = neighborhood.properties.name;
   };
 
   render() {
@@ -38,24 +37,40 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>Logo</p>
+          <h3 className="brand">
+            <span role="img" aria-label="House Emoji">
+              🏡
+            </span>
+            Explore Denver Neighborhoods
+          </h3>
         </header>
         <main className="App-main">
-          <div id="map">
-            <ul>
-              {neighborhoods.map(neighborhood => (
-                <li
-                  key={neighborhood.properties.id}
-                  onClick={this.handleNeighborhoodClick.bind(
-                    null,
-                    neighborhood
-                  )}
-                >
-                  {neighborhood.properties.name}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <LeafletMap
+            center={[39.714, -104.992]}
+            zoom={12}
+            maxZoom={15}
+            attributionControl={true}
+            zoomControl={true}
+            doubleClickZoom={true}
+            scrollWheelZoom={true}
+            dragging={true}
+            animate={true}
+            easeLinearity={0.35}
+          >
+            <TileLayer url="http://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png" />
+            {neighborhoods.map((neighborhood, i) => (
+              <Polygon
+                key={i}
+                positions={neighborhood.geometry.coordinates}
+                color={neighborhood.properties.fillColor}
+                fillOpacity={0.7}
+                stroke={false}
+                onClick={() => {
+                  this.handleNeighborhoodClick(neighborhood);
+                }}
+              />
+            ))}
+          </LeafletMap>
           <section className="neighborhood-detail">
             {!!activeNeighborhood ? (
               <NeighborhoodWriteup
