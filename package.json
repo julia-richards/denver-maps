@@ -2,7 +2,7 @@
   "name": "denver-maps",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://julia-richards.github.io/denver-maps/",
+  "homepage": "https://julia-richards.github.io/denver-maps/",
   "dependencies": {
     "leaflet": "^1.4.0",
     "react": "^16.6.3",
