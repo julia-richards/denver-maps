@@ -1,24 +1,28 @@
-export default [
+// writes new file at end of file
+const fs = require("fs");
+
+// old data format
+const old = [
   {
     id: "cityParkWest",
     name: "City Park West",
     paths: [
       {
         lng: -104.959859,
-        lat: 39.750638,
+        lat: 39.750638
       },
       {
         lng: -104.97327,
-        lat: 39.750662,
+        lat: 39.750662
       },
       {
         lng: -104.97326,
-        lat: 39.74007,
+        lat: 39.74007
       },
       {
         lng: -104.959859,
-        lat: 39.740054,
-      },
+        lat: 39.740054
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f3765a",
@@ -28,8 +32,8 @@ export default [
     keyFeats: [
       "16th Avenue Bicycle Corridor East to City Park or West to Downtown",
       "Multiple grocery stores within walking distance",
-      "Major bus line nearby",
-    ],
+      "Major bus line nearby"
+    ]
   },
   {
     id: "sloansLake",
@@ -37,44 +41,44 @@ export default [
     paths: [
       {
         lat: 39.760857,
-        lng: -105.026561,
+        lng: -105.026561
       },
       {
         lat: 39.761599,
-        lng: -105.028363,
+        lng: -105.028363
       },
       {
         lat: 39.762036,
-        lng: -105.029125,
+        lng: -105.029125
       },
       {
         lat: 39.762028,
-        lng: -105.053157,
+        lng: -105.053157
       },
       {
         lat: 39.744071,
-        lng: -105.053071,
+        lng: -105.053071
       },
       {
         lat: 39.744038,
-        lng: -105.035884,
+        lng: -105.035884
       },
       {
         lat: 39.746431,
-        lng: -105.035884,
+        lng: -105.035884
       },
       {
         lat: 39.746447,
-        lng: -105.02537,
+        lng: -105.02537
       },
       {
         lat: 39.760214,
-        lng: -105.025434,
+        lng: -105.025434
       },
       {
         lat: 39.760857,
-        lng: -105.026561,
-      },
+        lng: -105.026561
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f3765a",
@@ -86,8 +90,8 @@ export default [
       "Sloan's Lake Park nearby",
       "Close to mountain hiking trails and recreation areas",
       "Easy drive to downtown Denver",
-      "Near Interstate 25",
-    ],
+      "Near Interstate 25"
+    ]
   },
   {
     id: "highlands",
@@ -95,48 +99,48 @@ export default [
     paths: [
       {
         lat: 39.769096,
-        lng: -104.995565,
+        lng: -104.995565
       },
       {
         lat: 39.768518,
-        lng: -104.995157,
+        lng: -104.995157
       },
       {
         lat: 39.766556,
-        lng: -104.999663,
+        lng: -104.999663
       },
       {
         lat: 39.76555,
-        lng: -105.001058,
+        lng: -105.001058
       },
       {
         lat: 39.761212,
-        lng: -105.004448,
+        lng: -105.004448
       },
       {
         lat: 39.755521,
-        lng: -105.012774,
+        lng: -105.012774
       },
       {
         lat: 39.757599,
-        lng: -105.01904,
+        lng: -105.01904
       },
       {
         lat: 39.760354,
-        lng: -105.024962,
+        lng: -105.024962
       },
       {
         lat: 39.769178,
-        lng: -105.025069,
+        lng: -105.025069
       },
       {
         lat: 39.769228,
-        lng: -104.997496,
+        lng: -104.997496
       },
       {
         lat: 39.769096,
-        lng: -104.995565,
-      },
+        lng: -104.995565
+      }
     ],
     strokeWeight: 0,
     fillColor: "#72c6a1",
@@ -150,8 +154,8 @@ export default [
       "Home to LoHi (Lower Highland) nightlife district with a countless number of social elements and amenities",
       "Short commute to Auraria Higher Educational Campus",
       "Near South Platte River greenway (major bicycle corridor)",
-      "Seasonal farmers market",
-    ],
+      "Seasonal farmers market"
+    ]
   },
   {
     id: "jeffPark",
@@ -159,84 +163,84 @@ export default [
     paths: [
       {
         lat: 39.746431,
-        lng: -105.025005,
+        lng: -105.025005
       },
       {
         lat: 39.746447,
-        lng: -105.023674,
+        lng: -105.023674
       },
       {
         lat: 39.747552,
-        lng: -105.023374,
+        lng: -105.023374
       },
       {
         lat: 39.747635,
-        lng: -105.021271,
+        lng: -105.021271
       },
       {
         lat: 39.747701,
-        lng: -105.019168,
+        lng: -105.019168
       },
       {
         lat: 39.745111,
-        lng: -105.018138,
+        lng: -105.018138
       },
       {
         lat: 39.743939,
-        lng: -105.01625,
+        lng: -105.01625
       },
       {
         lat: 39.746216,
-        lng: -105.015928,
+        lng: -105.015928
       },
       {
         lat: 39.749021,
-        lng: -105.015757,
+        lng: -105.015757
       },
       {
         lat: 39.74973,
-        lng: -105.015456,
+        lng: -105.015456
       },
       {
         lat: 39.750374,
-        lng: -105.014898,
+        lng: -105.014898
       },
       {
         lat: 39.75171,
-        lng: -105.012559,
+        lng: -105.012559
       },
       {
         lat: 39.752832,
-        lng: -105.011487,
+        lng: -105.011487
       },
       {
         lat: 39.753821,
-        lng: -105.010017,
+        lng: -105.010017
       },
       {
         lat: 39.75472,
-        lng: -105.011873,
+        lng: -105.011873
       },
       {
         lat: 39.755793,
-        lng: -105.014791,
+        lng: -105.014791
       },
       {
         lat: 39.757929,
-        lng: -105.020585,
+        lng: -105.020585
       },
       {
         lat: 39.759207,
-        lng: -105.023063,
+        lng: -105.023063
       },
       {
         lat: 39.760007,
-        lng: -105.025026,
+        lng: -105.025026
       },
       {
         lat: 39.746431,
-        lng: -105.025005,
-      },
+        lng: -105.025005
+      }
     ],
     strokeWeight: 0,
     fillColor: "#4082ad",
@@ -247,8 +251,8 @@ export default [
       "Biking distance to downtown Denver and Auraria Higher Educational Campus",
       "Easy drive to downtown Denver",
       "Less than 4 minutes to Interstate 25 from any location point within the neighborhood boundaries",
-      "Major grocer located within neighborhood",
-    ],
+      "Major grocer located within neighborhood"
+    ]
   },
   {
     id: "auraria",
@@ -256,72 +260,72 @@ export default [
     paths: [
       {
         lat: 39.753541,
-        lng: -105.009448,
+        lng: -105.009448
       },
       {
         lat: 39.752419,
-        lng: -105.007731,
+        lng: -105.007731
       },
       {
         lat: 39.751446,
-        lng: -105.007023,
+        lng: -105.007023
       },
       {
         lat: 39.749813,
-        lng: -105.004706,
+        lng: -105.004706
       },
       {
         lat: 39.748394,
-        lng: -105.00344,
+        lng: -105.00344
       },
       {
         lat: 39.7462,
-        lng: -105.001401,
+        lng: -105.001401
       },
       {
         lat: 39.745243,
-        lng: -105.000908,
+        lng: -105.000908
       },
       {
         lat: 39.743032,
-        lng: -105.000543,
+        lng: -105.000543
       },
       {
         lat: 39.740227,
-        lng: -104.999148,
+        lng: -104.999148
       },
       {
         lat: 39.74059,
-        lng: -105.013847,
+        lng: -105.013847
       },
       {
         lat: 39.742751,
-        lng: -105.015027,
+        lng: -105.015027
       },
       {
         lat: 39.743675,
-        lng: -105.015993,
+        lng: -105.015993
       },
       {
         lat: 39.7445,
-        lng: -105.015521,
+        lng: -105.015521
       },
       {
         lat: 39.74681,
-        lng: -105.01537,
+        lng: -105.01537
       },
       {
         lat: 39.748641,
-        lng: -105.01522,
+        lng: -105.01522
       },
       {
         lat: 39.749912,
-        lng: -105.014834,
+        lng: -105.014834
       },
       {
         lat: 39.753541,
-        lng: -105.009448,
-      },
+        lng: -105.009448
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f5b71a",
@@ -333,8 +337,8 @@ export default [
       "Auraria Campus (UCD, Metro State, CCD)",
       "Close proximity to South Platte River",
       "Pepsi Center",
-      "Walking distance to downtown Denver",
-    ],
+      "Walking distance to downtown Denver"
+    ]
   },
   {
     id: "capHill",
@@ -342,24 +346,24 @@ export default [
     paths: [
       {
         lat: 39.740062,
-        lng: -104.987325,
+        lng: -104.987325
       },
       {
         lat: 39.739996,
-        lng: -104.972991,
+        lng: -104.972991
       },
       {
         lat: 39.725652,
-        lng: -104.973013,
+        lng: -104.973013
       },
       {
         lat: 39.725738,
-        lng: -104.987373,
+        lng: -104.987373
       },
       {
         lat: 39.740062,
-        lng: -104.987325,
-      },
+        lng: -104.987325
+      }
     ],
     strokeWeight: 0,
     fillColor: "#72c6a1",
@@ -370,8 +374,8 @@ export default [
       "Four different major grocery stores within walking distance",
       "High-frequency city bus routes serve the northern and western boundaries of this neighborhood",
       "Home to the Governor’s Park historic district",
-      "Thriving nightlife scene",
-    ],
+      "Thriving nightlife scene"
+    ]
   },
   {
     id: "civCenter",
@@ -380,36 +384,36 @@ export default [
     paths: [
       {
         lat: 39.739963,
-        lng: -104.997861,
+        lng: -104.997861
       },
       {
         lat: 39.740095,
-        lng: -104.993033,
+        lng: -104.993033
       },
       {
         lat: 39.739996,
-        lng: -104.990544,
+        lng: -104.990544
       },
       {
         lat: 39.740557,
-        lng: -104.98887,
+        lng: -104.98887
       },
       {
         lat: 39.740029,
-        lng: -104.98754,
+        lng: -104.98754
       },
       {
         lat: 39.727108,
-        lng: -104.987432,
+        lng: -104.987432
       },
       {
         lat: 39.727323,
-        lng: -104.988806,
+        lng: -104.988806
       },
       {
         lat: 39.739963,
-        lng: -104.997861,
-      },
+        lng: -104.997861
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f5b71a",
@@ -421,8 +425,8 @@ export default [
       "Walking distance to downtown Denver",
       "Denver Art Museum",
       "Denver Public Library main central library branch",
-      "Cherry Creek bike trail",
-    ],
+      "Cherry Creek bike trail"
+    ]
   },
   {
     id: "cityPark",
@@ -430,52 +434,52 @@ export default [
     paths: [
       {
         lat: 39.740252,
-        lng: -104.9581,
+        lng: -104.9581
       },
       {
         lat: 39.740227,
-        lng: -104.950198,
+        lng: -104.950198
       },
       {
         lat: 39.74019,
-        lng: -104.941953,
+        lng: -104.941953
       },
       {
         lat: 39.740243,
-        lng: -104.940805,
+        lng: -104.940805
       },
       {
         lat: 39.750959,
-        lng: -104.94088,
+        lng: -104.94088
       },
       {
         lat: 39.751099,
-        lng: -104.945429,
+        lng: -104.945429
       },
       {
         lat: 39.751091,
-        lng: -104.954795,
+        lng: -104.954795
       },
       {
         lat: 39.750877,
-        lng: -104.957038,
+        lng: -104.957038
       },
       {
         lat: 39.750629,
-        lng: -104.958883,
+        lng: -104.958883
       },
       {
         lat: 39.750646,
-        lng: -104.959634,
+        lng: -104.959634
       },
       {
         lat: 39.740078,
-        lng: -104.959693,
+        lng: -104.959693
       },
       {
         lat: 39.740252,
-        lng: -104.9581,
-      },
+        lng: -104.9581
+      }
     ],
     strokeWeight: 0,
     fillColor: "#4082ad",
@@ -485,8 +489,8 @@ export default [
     keyFeats: [
       "Seasonal Farmers Market",
       "Natural-food grocery store within neighborhood",
-      "Large park with crushed-gravel running paths, playfields, basketball courts, and tennis courts",
-    ],
+      "Large park with crushed-gravel running paths, playfields, basketball courts, and tennis courts"
+    ]
   },
   {
     id: "cherryCreek",
@@ -494,128 +498,128 @@ export default [
     paths: [
       {
         lat: 39.725549,
-        lng: -104.941256,
+        lng: -104.941256
       },
       {
         lat: 39.725507,
-        lng: -104.940998,
+        lng: -104.940998
       },
       {
         lat: 39.72526,
-        lng: -104.940891,
+        lng: -104.940891
       },
       {
         lat: 39.715935,
-        lng: -104.94088,
+        lng: -104.94088
       },
       {
         lat: 39.705833,
-        lng: -104.940783,
+        lng: -104.940783
       },
       {
         lat: 39.706179,
-        lng: -104.942157,
+        lng: -104.942157
       },
       {
         lat: 39.711036,
-        lng: -104.948133,
+        lng: -104.948133
       },
       {
         lat: 39.711053,
-        lng: -104.949747,
+        lng: -104.949747
       },
       {
         lat: 39.711057,
-        lng: -104.951904,
+        lng: -104.951904
       },
       {
         lat: 39.711049,
-        lng: -104.95568,
+        lng: -104.95568
       },
       {
         lat: 39.711103,
-        lng: -104.957333,
+        lng: -104.957333
       },
       {
         lat: 39.711156,
-        lng: -104.959242,
+        lng: -104.959242
       },
       {
         lat: 39.711672,
-        lng: -104.95928,
+        lng: -104.95928
       },
       {
         lat: 39.711936,
-        lng: -104.959999,
+        lng: -104.959999
       },
       {
         lat: 39.712229,
-        lng: -104.961587,
+        lng: -104.961587
       },
       {
         lat: 39.712415,
-        lng: -104.96164,
+        lng: -104.96164
       },
       {
         lat: 39.71272,
-        lng: -104.962461,
+        lng: -104.962461
       },
       {
         lat: 39.71303,
-        lng: -104.962944,
+        lng: -104.962944
       },
       {
         lat: 39.713215,
-        lng: -104.963684,
+        lng: -104.963684
       },
       {
         lat: 39.713253,
-        lng: -104.966329,
+        lng: -104.966329
       },
       {
         lat: 39.714284,
-        lng: -104.96635,
+        lng: -104.96635
       },
       {
         lat: 39.714668,
-        lng: -104.96701,
+        lng: -104.96701
       },
       {
         lat: 39.714829,
-        lng: -104.968587,
+        lng: -104.968587
       },
       {
         lat: 39.714775,
-        lng: -104.973227,
+        lng: -104.973227
       },
       {
         lat: 39.71749,
-        lng: -104.973109,
+        lng: -104.973109
       },
       {
         lat: 39.718481,
-        lng: -104.973185,
+        lng: -104.973185
       },
       {
         lat: 39.719421,
-        lng: -104.973201,
+        lng: -104.973201
       },
       {
         lat: 39.720127,
-        lng: -104.972868,
+        lng: -104.972868
       },
       {
         lat: 39.72304,
-        lng: -104.972863,
+        lng: -104.972863
       },
       {
         lat: 39.725524,
-        lng: -104.97282,
+        lng: -104.97282
       },
       {
         lat: 39.725549,
-        lng: -104.941256,
-      },
+        lng: -104.941256
+      }
     ],
     strokeWeight: 0,
     fillColor: "#72c6a1",
@@ -626,8 +630,8 @@ export default [
       "Over 400 resturants, bars, taverns and small retailers",
       "Cherry Creek bicycle corridor",
       "Situated midpoint between downtown Denver and the Denver Technological Center",
-      "Two large grocery stores",
-    ],
+      "Two large grocery stores"
+    ]
   },
   {
     id: "uptown",
@@ -635,32 +639,32 @@ export default [
     paths: [
       {
         lat: 39.740165,
-        lng: -104.987331,
+        lng: -104.987331
       },
       {
         lat: 39.747346,
-        lng: -104.987309,
+        lng: -104.987309
       },
       {
         lat: 39.747482,
-        lng: -104.987094,
+        lng: -104.987094
       },
       {
         lat: 39.747466,
-        lng: -104.978286,
+        lng: -104.978286
       },
       {
         lat: 39.743754,
-        lng: -104.973469,
+        lng: -104.973469
       },
       {
         lat: 39.740099,
-        lng: -104.973533,
+        lng: -104.973533
       },
       {
         lat: 39.740165,
-        lng: -104.987331,
-      },
+        lng: -104.987331
+      }
     ],
     strokeWeight: 0,
     fillColor: "#4082ad",
@@ -672,8 +676,8 @@ export default [
       "High-frequency city bus route serves the southern boundary of this neighborhood",
       "Civic Center Station transit station located nearby",
       "Close to light rail transit station",
-      "Near central downtown including the 16th Street Mall and Union Station",
-    ],
+      "Near central downtown including the 16th Street Mall and Union Station"
+    ]
   },
   {
     id: "uniPark",
@@ -681,76 +685,76 @@ export default [
     paths: [
       {
         lat: 39.674774,
-        lng: -104.959323,
+        lng: -104.959323
       },
       {
         lat: 39.679076,
-        lng: -104.959269,
+        lng: -104.959269
       },
       {
         lat: 39.682808,
-        lng: -104.959291,
+        lng: -104.959291
       },
       {
         lat: 39.684625,
-        lng: -104.959323,
+        lng: -104.959323
       },
       {
         lat: 39.68493,
-        lng: -104.949989,
+        lng: -104.949989
       },
       {
         lat: 39.682899,
-        lng: -104.940644,
+        lng: -104.940644
       },
       {
         lat: 39.682164,
-        lng: -104.940655,
+        lng: -104.940655
       },
       {
         lat: 39.680934,
-        lng: -104.940891,
+        lng: -104.940891
       },
       {
         lat: 39.675335,
-        lng: -104.940719,
+        lng: -104.940719
       },
       {
         lat: 39.667589,
-        lng: -104.940687,
+        lng: -104.940687
       },
       {
         lat: 39.667622,
-        lng: -104.945955,
+        lng: -104.945955
       },
       {
         lat: 39.667193,
-        lng: -104.947167,
+        lng: -104.947167
       },
       {
         lat: 39.666986,
-        lng: -104.947832,
+        lng: -104.947832
       },
       {
         lat: 39.66692,
-        lng: -104.94853,
+        lng: -104.94853
       },
       {
         lat: 39.667094,
-        lng: -104.949764,
+        lng: -104.949764
       },
       {
         lat: 39.667573,
-        lng: -104.950976,
+        lng: -104.950976
       },
       {
         lat: 39.667647,
-        lng: -104.959312,
+        lng: -104.959312
       },
       {
         lat: 39.674774,
-        lng: -104.959323,
-      },
+        lng: -104.959323
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f3765a",
@@ -762,8 +766,8 @@ export default [
       "Observatory Park",
       "Univeristy of Denver closeby",
       "Near major interstate highway",
-      "Short driving distance to Washington Park",
-    ],
+      "Short driving distance to Washington Park"
+    ]
   },
   {
     id: "lincolnPark",
@@ -771,67 +775,67 @@ export default [
     paths: [
       {
         lat: 39.740243,
-        lng: -105.013804,
+        lng: -105.013804
       },
       {
         lat: 39.736877,
-        lng: -105.013836,
+        lng: -105.013836
       },
       {
         lat: 39.734823,
-        lng: -105.01478,
+        lng: -105.01478
       },
       {
         lat: 39.732793,
-        lng: -105.015521,
+        lng: -105.015521
       },
       {
         lat: 39.731646,
-        lng: -105.015435,
+        lng: -105.015435
       },
       {
         lat: 39.730632,
-        lng: -105.015145,
+        lng: -105.015145
       },
       {
         lat: 39.728057,
-        lng: -105.014255,
+        lng: -105.014255
       },
       {
         lat: 39.726687,
-        lng: -105.013718,
+        lng: -105.013718
       },
       {
         lat: 39.725837,
-        lng: -105.013203,
+        lng: -105.013203
       },
       {
         lat: 39.725738,
-        lng: -104.987497,
+        lng: -104.987497
       },
       {
         lat: 39.726993,
-        lng: -104.987411,
+        lng: -104.987411
       },
       {
         lat: 39.727323,
-        lng: -104.988827,
+        lng: -104.988827
       },
       {
         lat: 39.73993,
-        lng: -104.998891,
+        lng: -104.998891
       },
       {
         lat: 39.740243,
-        lng: -105.013804,
-      },
+        lng: -105.013804
+      }
     ],
     strokeWeight: 0,
     fillColor: "#4082ad",
     fillOpacity: 0.7,
     writeUp:
       "Lincoln Park is Denver’s biggest gathering ground for the city’s many art aficionados. Nearly 40 galleries occupy the Santa Fe Arts District, which runs directly through the heart of this neighborhood and attracts an invariably large number of those who appreciate creative disciplines on the first Friday of every month. A light rail station located at 10th Avenue and Osage Street serves the neighborhood and provides a car-free commute to the Denver Technological Center as well as the suburban communities of Englewood and Littleton. Downtown Denver is a short walk away, as is the Auraria educational campus.",
-    keyFeats: ["Light rail transit", "Sante Fe Art District"],
+    keyFeats: ["Light rail transit", "Sante Fe Art District"]
   },
   {
     id: "congressPark",
@@ -839,91 +843,91 @@ export default [
     paths: [
       {
         lat: 39.740062,
-        lng: -104.941974,
+        lng: -104.941974
       },
       {
         lat: 39.740087,
-        lng: -104.949871,
+        lng: -104.949871
       },
       {
         lat: 39.74012,
-        lng: -104.958014,
+        lng: -104.958014
       },
       {
         lat: 39.740054,
-        lng: -104.958701,
+        lng: -104.958701
       },
       {
         lat: 39.738808,
-        lng: -104.958711,
+        lng: -104.958711
       },
       {
         lat: 39.738115,
-        lng: -104.958529,
+        lng: -104.958529
       },
       {
         lat: 39.736374,
-        lng: -104.958497,
+        lng: -104.958497
       },
       {
         lat: 39.733305,
-        lng: -104.958497,
+        lng: -104.958497
       },
       {
         lat: 39.732826,
-        lng: -104.958508,
+        lng: -104.958508
       },
       {
         lat: 39.73215,
-        lng: -104.958958,
+        lng: -104.958958
       },
       {
         lat: 39.731869,
-        lng: -104.959119,
+        lng: -104.959119
       },
       {
         lat: 39.731539,
-        lng: -104.959151,
+        lng: -104.959151
       },
       {
         lat: 39.729113,
-        lng: -104.958937,
+        lng: -104.958937
       },
       {
         lat: 39.727364,
-        lng: -104.958926,
+        lng: -104.958926
       },
       {
         lat: 39.726052,
-        lng: -104.958915,
+        lng: -104.958915
       },
       {
         lat: 39.725796,
-        lng: -104.958904,
+        lng: -104.958904
       },
       {
         lat: 39.725681,
-        lng: -104.958786,
+        lng: -104.958786
       },
       {
         lat: 39.725681,
-        lng: -104.940869,
+        lng: -104.940869
       },
       {
         lat: 39.740021,
-        lng: -104.940837,
+        lng: -104.940837
       },
       {
         lat: 39.740062,
-        lng: -104.941974,
-      },
+        lng: -104.941974
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f5b71a",
     fillOpacity: 0.7,
     writeUp:
       "Cerebral. Sophisticated. Responsible. If any list of words could be utilized to personify the character of Congress Park it could very well include those three. This east-central Denver neighborhood is known for the presence of a large and nationally-known book retailer, several lecture halls, and two high-performing public elementary schools, as well as its close proximity to Denver East High School, two of the country’s top holistic medicine post-secondary educational institutes, and multiple museums and historic landmarks. Denver’s main street, Colfax Avenue, is the established north boundary of this neighborhood and has a plethora of nightlife venues. Also, shopping for healthy and organic grocery products in Congress Park is easy, thanks to the three natural food stores that are located in the neighborhood’s general vicinity.",
-    keyFeats: ["Congress Park Recreation Center", "SoCo Nightlife District"],
+    keyFeats: ["Congress Park Recreation Center", "SoCo Nightlife District"]
   },
   {
     id: "baker",
@@ -931,108 +935,108 @@ export default [
     paths: [
       {
         lat: 39.725639,
-        lng: -105.007989,
+        lng: -105.007989
       },
       {
         lat: 39.725565,
-        lng: -105.003654,
+        lng: -105.003654
       },
       {
         lat: 39.725549,
-        lng: -105.000886,
+        lng: -105.000886
       },
       {
         lat: 39.725648,
-        lng: -105.000071,
+        lng: -105.000071
       },
       {
         lat: 39.725557,
-        lng: -104.986853,
+        lng: -104.986853
       },
       {
         lat: 39.71109,
-        lng: -104.98696,
+        lng: -104.98696
       },
       {
         lat: 39.701144,
-        lng: -104.986832,
+        lng: -104.986832
       },
       {
         lat: 39.702877,
-        lng: -104.989235,
+        lng: -104.989235
       },
       {
         lat: 39.703563,
-        lng: -104.991134,
+        lng: -104.991134
       },
       {
         lat: 39.704405,
-        lng: -104.993698,
+        lng: -104.993698
       },
       {
         lat: 39.705057,
-        lng: -104.995018,
+        lng: -104.995018
       },
       {
         lat: 39.705973,
-        lng: -104.996058,
+        lng: -104.996058
       },
       {
         lat: 39.706856,
-        lng: -104.996606,
+        lng: -104.996606
       },
       {
         lat: 39.708911,
-        lng: -104.997571,
+        lng: -104.997571
       },
       {
         lat: 39.711008,
-        lng: -104.998623,
+        lng: -104.998623
       },
       {
         lat: 39.714391,
-        lng: -105.000736,
+        lng: -105.000736
       },
       {
         lat: 39.716026,
-        lng: -105.001895,
+        lng: -105.001895
       },
       {
         lat: 39.717065,
-        lng: -105.003204,
+        lng: -105.003204
       },
       {
         lat: 39.718493,
-        lng: -105.005275,
+        lng: -105.005275
       },
       {
         lat: 39.719574,
-        lng: -105.006519,
+        lng: -105.006519
       },
       {
         lat: 39.72075,
-        lng: -105.007742,
+        lng: -105.007742
       },
       {
         lat: 39.722042,
-        lng: -105.009223,
+        lng: -105.009223
       },
       {
         lat: 39.72311,
-        lng: -105.010666,
+        lng: -105.010666
       },
       {
         lat: 39.724237,
-        lng: -105.011969,
+        lng: -105.011969
       },
       {
         lat: 39.725474,
-        lng: -105.012978,
+        lng: -105.012978
       },
       {
         lat: 39.725639,
-        lng: -105.007989,
-      },
+        lng: -105.007989
+      }
     ],
     strokeWeight: 0,
     fillColor: "#72c6a1",
@@ -1042,8 +1046,8 @@ export default [
     keyFeats: [
       "South Broadway nightlife and shopping district",
       "Sante Fe Art District",
-      "Rapid bus service to and from downtown Denver",
-    ],
+      "Rapid bus service to and from downtown Denver"
+    ]
   },
   {
     id: "uni",
@@ -1051,60 +1055,60 @@ export default [
     paths: [
       {
         lat: 39.684823,
-        lng: -104.961297,
+        lng: -104.961297
       },
       {
         lat: 39.685219,
-        lng: -104.963443,
+        lng: -104.963443
       },
       {
         lat: 39.685921,
-        lng: -104.965234,
+        lng: -104.965234
       },
       {
         lat: 39.686833,
-        lng: -104.966994,
+        lng: -104.966994
       },
       {
         lat: 39.689917,
-        lng: -104.973383,
+        lng: -104.973383
       },
       {
         lat: 39.68396,
-        lng: -104.973372,
+        lng: -104.973372
       },
       {
         lat: 39.677846,
-        lng: -104.973399,
+        lng: -104.973399
       },
       {
         lat: 39.665892,
-        lng: -104.973431,
+        lng: -104.973431
       },
       {
         lat: 39.665875,
-        lng: -104.968764,
+        lng: -104.968764
       },
       {
         lat: 39.660457,
-        lng: -104.968775,
+        lng: -104.968775
       },
       {
         lat: 39.660412,
-        lng: -104.959537,
+        lng: -104.959537
       },
       {
         lat: 39.672561,
-        lng: -104.959473,
+        lng: -104.959473
       },
       {
         lat: 39.684806,
-        lng: -104.959645,
+        lng: -104.959645
       },
       {
         lat: 39.684823,
-        lng: -104.961297,
-      },
+        lng: -104.961297
+      }
     ],
     strokeWeight: 0,
     fillColor: "#72c6a1",
@@ -1114,8 +1118,8 @@ export default [
     keyFeats: [
       "University of Denver campus",
       "Large light rail station",
-      "Washington Park close by",
-    ],
+      "Washington Park close by"
+    ]
   },
   {
     id: "centralDowntown",
@@ -1123,80 +1127,80 @@ export default [
     paths: [
       {
         lat: 39.755339,
-        lng: -105.012302,
+        lng: -105.012302
       },
       {
         lat: 39.761426,
-        lng: -105.003526,
+        lng: -105.003526
       },
       {
         lat: 39.763521,
-        lng: -105.002067,
+        lng: -105.002067
       },
       {
         lat: 39.765616,
-        lng: -104.999921,
+        lng: -104.999921
       },
       {
         lat: 39.76677,
-        lng: -104.997775,
+        lng: -104.997775
       },
       {
         lat: 39.767611,
-        lng: -104.995179,
+        lng: -104.995179
       },
       {
         lat: 39.760073,
-        lng: -104.994835,
+        lng: -104.994835
       },
       {
         lat: 39.754531,
-        lng: -104.987518,
+        lng: -104.987518
       },
       {
         lat: 39.740144,
-        lng: -104.987561,
+        lng: -104.987561
       },
       {
         lat: 39.740788,
-        lng: -104.988827,
+        lng: -104.988827
       },
       {
         lat: 39.740227,
-        lng: -104.990522,
+        lng: -104.990522
       },
       {
         lat: 39.740293,
-        lng: -104.998011,
+        lng: -104.998011
       },
       {
         lat: 39.743659,
-        lng: -104.999749,
+        lng: -104.999749
       },
       {
         lat: 39.746167,
-        lng: -105.000092,
+        lng: -105.000092
       },
       {
         lat: 39.747981,
-        lng: -105.002517,
+        lng: -105.002517
       },
       {
         lat: 39.749037,
-        lng: -105.00329,
+        lng: -105.00329
       },
       {
         lat: 39.751842,
-        lng: -105.006701,
+        lng: -105.006701
       },
       {
         lat: 39.75298,
-        lng: -105.007624,
+        lng: -105.007624
       },
       {
         lat: 39.755339,
-        lng: -105.012302,
-      },
+        lng: -105.012302
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f3765a",
@@ -1211,8 +1215,8 @@ export default [
       "Denver Union Station",
       "Lower Downtown (LoDo) nightlife and entertainment district",
       "Larimer Square",
-      "Colorado Convention Center",
-    ],
+      "Colorado Convention Center"
+    ]
   },
   {
     id: "westHigh",
@@ -1220,44 +1224,44 @@ export default [
     paths: [
       {
         lat: 39.769162,
-        lng: -105.02537,
+        lng: -105.02537
       },
       {
         lat: 39.769458,
-        lng: -105.034618,
+        lng: -105.034618
       },
       {
         lat: 39.769327,
-        lng: -105.039231,
+        lng: -105.039231
       },
       {
         lat: 39.769244,
-        lng: -105.053114,
+        lng: -105.053114
       },
       {
         lat: 39.762201,
-        lng: -105.05305,
+        lng: -105.05305
       },
       {
         lat: 39.762201,
-        lng: -105.02876,
+        lng: -105.02876
       },
       {
         lat: 39.761739,
-        lng: -105.028116,
+        lng: -105.028116
       },
       {
         lat: 39.761195,
-        lng: -105.026764,
+        lng: -105.026764
       },
       {
         lat: 39.760519,
-        lng: -105.025455,
+        lng: -105.025455
       },
       {
         lat: 39.769162,
-        lng: -105.02537,
-      },
+        lng: -105.02537
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f5b71a",
@@ -1269,8 +1273,8 @@ export default [
       "Sloan's Lake Park nearby",
       "Close to mountain hiking trails and recreation areas",
       "Easy drive to downtown Denver",
-      "Near Interstate 25",
-    ],
+      "Near Interstate 25"
+    ]
   },
   {
     id: "washPark",
@@ -1278,132 +1282,132 @@ export default [
     paths: [
       {
         lat: 39.694701,
-        lng: -104.973367,
+        lng: -104.973367
       },
       {
         lat: 39.700186,
-        lng: -104.973329,
+        lng: -104.973329
       },
       {
         lat: 39.711181,
-        lng: -104.973345,
+        lng: -104.973345
       },
       {
         lat: 39.712947,
-        lng: -104.973351,
+        lng: -104.973351
       },
       {
         lat: 39.714268,
-        lng: -104.973351,
+        lng: -104.973351
       },
       {
         lat: 39.714742,
-        lng: -104.97326,
+        lng: -104.97326
       },
       {
         lat: 39.714812,
-        lng: -104.968614,
+        lng: -104.968614
       },
       {
         lat: 39.714664,
-        lng: -104.967048,
+        lng: -104.967048
       },
       {
         lat: 39.714268,
-        lng: -104.966393,
+        lng: -104.966393
       },
       {
         lat: 39.713236,
-        lng: -104.966356,
+        lng: -104.966356
       },
       {
         lat: 39.713191,
-        lng: -104.963679,
+        lng: -104.963679
       },
       {
         lat: 39.713017,
-        lng: -104.962965,
+        lng: -104.962965
       },
       {
         lat: 39.712712,
-        lng: -104.962499,
+        lng: -104.962499
       },
       {
         lat: 39.712407,
-        lng: -104.96164,
+        lng: -104.96164
       },
       {
         lat: 39.712208,
-        lng: -104.961614,
+        lng: -104.961614
       },
       {
         lat: 39.711928,
-        lng: -104.960074,
+        lng: -104.960074
       },
       {
         lat: 39.711672,
-        lng: -104.959371,
+        lng: -104.959371
       },
       {
         lat: 39.711061,
-        lng: -104.959398,
+        lng: -104.959398
       },
       {
         lat: 39.708424,
-        lng: -104.959403,
+        lng: -104.959403
       },
       {
         lat: 39.704937,
-        lng: -104.959419,
+        lng: -104.959419
       },
       {
         lat: 39.698106,
-        lng: -104.959419,
+        lng: -104.959419
       },
       {
         lat: 39.687415,
-        lng: -104.959484,
+        lng: -104.959484
       },
       {
         lat: 39.686342,
-        lng: -104.959623,
+        lng: -104.959623
       },
       {
         lat: 39.684971,
-        lng: -104.959623,
+        lng: -104.959623
       },
       {
         lat: 39.68498,
-        lng: -104.960793,
+        lng: -104.960793
       },
       {
         lat: 39.685095,
-        lng: -104.962027,
+        lng: -104.962027
       },
       {
         lat: 39.685364,
-        lng: -104.963341,
+        lng: -104.963341
       },
       {
         lat: 39.685838,
-        lng: -104.964666,
+        lng: -104.964666
       },
       {
         lat: 39.686986,
-        lng: -104.967042,
+        lng: -104.967042
       },
       {
         lat: 39.688361,
-        lng: -104.969928,
+        lng: -104.969928
       },
       {
         lat: 39.690074,
-        lng: -104.973383,
+        lng: -104.973383
       },
       {
         lat: 39.694701,
-        lng: -104.973367,
-      },
+        lng: -104.973367
+      }
     ],
     strokeWeight: 0,
     fillColor: "#4082ad",
@@ -1413,8 +1417,8 @@ export default [
     keyFeats: [
       "Washington Park",
       "Midway position between downtown Denver and Denver Technological Center",
-      "Near University of Denver",
-    ],
+      "Near University of Denver"
+    ]
   },
   {
     id: "speer",
@@ -1422,36 +1426,36 @@ export default [
     paths: [
       {
         lat: 39.725549,
-        lng: -104.98684,
+        lng: -104.98684
       },
       {
         lat: 39.711222,
-        lng: -104.986939,
+        lng: -104.986939
       },
       {
         lat: 39.711189,
-        lng: -104.973496,
+        lng: -104.973496
       },
       {
         lat: 39.717899,
-        lng: -104.973496,
+        lng: -104.973496
       },
       {
         lat: 39.719475,
-        lng: -104.973345,
+        lng: -104.973345
       },
       {
         lat: 39.720259,
-        lng: -104.973034,
+        lng: -104.973034
       },
       {
         lat: 39.725507,
-        lng: -104.973077,
+        lng: -104.973077
       },
       {
         lat: 39.725549,
-        lng: -104.98684,
-      },
+        lng: -104.98684
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f3765a",
@@ -1465,8 +1469,8 @@ export default [
       "Very large presence of bars and nightlife venues",
       "Major shopping center located close by",
       "Close to Washington Park",
-      "Near Cherry Creek regional bike trail",
-    ],
+      "Near Cherry Creek regional bike trail"
+    ]
   },
   {
     id: "cheesmanPark",
@@ -1474,67 +1478,67 @@ export default [
     paths: [
       {
         lat: 39.739946,
-        lng: -104.972916,
+        lng: -104.972916
       },
       {
         lat: 39.739905,
-        lng: -104.959731,
+        lng: -104.959731
       },
       {
         lat: 39.740029,
-        lng: -104.958915,
+        lng: -104.958915
       },
       {
         lat: 39.738717,
-        lng: -104.958883,
+        lng: -104.958883
       },
       {
         lat: 39.738123,
-        lng: -104.958722,
+        lng: -104.958722
       },
       {
         lat: 39.732793,
-        lng: -104.958744,
+        lng: -104.958744
       },
       {
         lat: 39.73224,
-        lng: -104.959119,
+        lng: -104.959119
       },
       {
         lat: 39.731605,
-        lng: -104.959377,
+        lng: -104.959377
       },
       {
         lat: 39.730351,
-        lng: -104.959291,
+        lng: -104.959291
       },
       {
         lat: 39.72913,
-        lng: -104.959141,
+        lng: -104.959141
       },
       {
         lat: 39.725689,
-        lng: -104.959087,
+        lng: -104.959087
       },
       {
         lat: 39.725672,
-        lng: -104.966125,
+        lng: -104.966125
       },
       {
         lat: 39.725664,
-        lng: -104.972852,
+        lng: -104.972852
       },
       {
         lat: 39.739946,
-        lng: -104.972916,
-      },
+        lng: -104.972916
+      }
     ],
     strokeWeight: 0,
     fillColor: "#4082ad",
     fillOpacity: 0.7,
     writeUp:
       "Hearing about the old haunts and legends of Cheesman Park can be an enchanting experience to nearly anyone, whether interested in history or not. The old-time ambiance of this neighborhood is easy to appreciate, thanks to the commonplace stone architecture, wrought-iron fences, elegant gardens, and century-old shade trees that dot the area. The centerpiece and crown jewel of this neighborhood is Cheesman Park itself, which offers runners and walkers a heavily-canopied, soft-surface running trail and an expansive sea of lush, green grass that makes for an exciting round of volleyball.",
-    keyFeats: ["Cheesman Park", "Denver Botanic Gardens"],
+    keyFeats: ["Cheesman Park", "Denver Botanic Gardens"]
   },
   {
     id: "washParkWest",
@@ -1542,44 +1546,44 @@ export default [
     paths: [
       {
         lat: 39.711082,
-        lng: -104.986928,
+        lng: -104.986928
       },
       {
         lat: 39.711032,
-        lng: -104.973485,
+        lng: -104.973485
       },
       {
         lat: 39.690206,
-        lng: -104.973539,
+        lng: -104.973539
       },
       {
         lat: 39.690602,
-        lng: -104.974375,
+        lng: -104.974375
       },
       {
         lat: 39.691081,
-        lng: -104.975212,
+        lng: -104.975212
       },
       {
         lat: 39.691741,
-        lng: -104.976124,
+        lng: -104.976124
       },
       {
         lat: 39.692484,
-        lng: -104.976972,
+        lng: -104.976972
       },
       {
         lat: 39.695456,
-        lng: -104.980266,
+        lng: -104.980266
       },
       {
         lat: 39.701136,
-        lng: -104.98681,
+        lng: -104.98681
       },
       {
         lat: 39.711082,
-        lng: -104.986928,
-      },
+        lng: -104.986928
+      }
     ],
     strokeWeight: 0,
     fillColor: "#f5b71a",
@@ -1592,8 +1596,8 @@ export default [
       "South Pearl Street business district",
       "University of Denver",
       "Big box national retailers",
-      "Whole Foods",
-    ],
+      "Whole Foods"
+    ]
   },
   {
     id: "fivePoints",
@@ -1601,76 +1605,76 @@ export default [
     paths: [
       {
         lat: 39.769112,
-        lng: -104.973474,
+        lng: -104.973474
       },
       {
         lat: 39.770168,
-        lng: -104.9737,
+        lng: -104.9737
       },
       {
         lat: 39.770943,
-        lng: -104.972916,
+        lng: -104.972916
       },
       {
         lat: 39.774835,
-        lng: -104.977991,
+        lng: -104.977991
       },
       {
         lat: 39.767562,
-        lng: -104.983795,
+        lng: -104.983795
       },
       {
         lat: 39.7671,
-        lng: -104.983999,
+        lng: -104.983999
       },
       {
         lat: 39.765327,
-        lng: -104.991005,
+        lng: -104.991005
       },
       {
         lat: 39.764733,
-        lng: -104.992711,
+        lng: -104.992711
       },
       {
         lat: 39.763397,
-        lng: -104.994696,
+        lng: -104.994696
       },
       {
         lat: 39.760667,
-        lng: -104.994503,
+        lng: -104.994503
       },
       {
         lat: 39.760098,
-        lng: -104.994256,
+        lng: -104.994256
       },
       {
         lat: 39.759389,
-        lng: -104.993623,
+        lng: -104.993623
       },
       {
         lat: 39.756914,
-        lng: -104.99034,
+        lng: -104.99034
       },
       {
         lat: 39.754432,
-        lng: -104.9871,
+        lng: -104.9871
       },
       {
         lat: 39.747594,
-        lng: -104.987261,
+        lng: -104.987261
       },
       {
         lat: 39.747594,
-        lng: -104.978367,
+        lng: -104.978367
       },
       {
         lat: 39.743997,
-        lng: -104.973506,
+        lng: -104.973506
       },
       {
         lat: 39.769112,
-        lng: -104.973474,
-      },
+        lng: -104.973474
+      }
     ],
     strokeWeight: 0,
     fillColor: "#72c6a1",
@@ -1681,7 +1685,40 @@ export default [
       "Multiple light rail transit stations",
       "Commuter rail transit providing direct service to Denver International Airport",
       "Welton Street nightlife",
-      "Close to downtown Denver",
-    ],
-  },
+      "Close to downtown Denver"
+    ]
+  }
 ];
+
+// transform data
+const newFormat = old.map((neighborhood, index) => {
+  var coordinates = neighborhood.paths.map(point => [point.lat, point.lng]);
+  return {
+    type: "Feature",
+    geometry: {
+      type: "Polygon",
+      coordinates: coordinates
+    },
+    properties: {
+      id: index,
+      name: neighborhood.name,
+      strokeWeight: neighborhood.strokeWeight,
+      fillColor: neighborhood.fillColor,
+      writeUp: neighborhood.writeUp,
+      keyFeats: neighborhood.keyFeats
+    }
+  };
+});
+
+// write new data to file
+fs.writeFile(
+  "/Users/JuliaRichards/Hut/denver-maps/src/neighborhoods.json",
+  JSON.stringify(newFormat),
+  function(err) {
+    if (err) {
+      return console.log(err);
+    }
+
+    console.log("The file was saved!");
+  }
+);

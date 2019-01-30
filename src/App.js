@@ -1,10 +1,31 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import neighborhoods from "./neighborhoods";
+import neighborhoods from "./neighborhoods.json";
+
+console.log(neighborhoods);
+
+const NeighborhoodWriteup = ({ name, writeUp, keyFeats }) => {
+  return (
+    <React.Fragment>
+      <article>
+        <h2>{name}</h2>
+        <p>{writeUp}</p>
+      </article>
+      <aside>
+        <h4>Key Features</h4>
+        <ul>
+          {keyFeats.map((feature, i) => (
+            <li key={i}>{feature}</li>
+          ))}
+        </ul>
+      </aside>
+    </React.Fragment>
+  );
+};
 class App extends Component {
   state = {
-    activeNeighborhood: null,
+    activeNeighborhood: null
   };
 
   handleNeighborhoodClick = neighborhood => {
@@ -24,33 +45,24 @@ class App extends Component {
             <ul>
               {neighborhoods.map(neighborhood => (
                 <li
-                  key={neighborhood.id}
+                  key={neighborhood.properties.id}
                   onClick={this.handleNeighborhoodClick.bind(
                     null,
                     neighborhood
                   )}
                 >
-                  {neighborhood.name}
+                  {neighborhood.properties.name}
                 </li>
               ))}
             </ul>
           </div>
           <section className="neighborhood-detail">
             {!!activeNeighborhood ? (
-              <React.Fragment>
-                <article>
-                  <h2>{activeNeighborhood.name}</h2>
-                  <p>{activeNeighborhood.writeUp}</p>
-                </article>
-                <aside>
-                  <h4>Key Features</h4>
-                  <ul>
-                    {activeNeighborhood.keyFeats.map((feature, i) => (
-                      <li key={i}>{feature}</li>
-                    ))}
-                  </ul>
-                </aside>
-              </React.Fragment>
+              <NeighborhoodWriteup
+                name={activeNeighborhood.properties.name}
+                writeUp={activeNeighborhood.properties.writeUp}
+                keyFeats={activeNeighborhood.properties.keyFeats}
+              />
             ) : (
               <h4>Select a neighborhood</h4>
             )}

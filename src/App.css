@@ -16,3 +16,9 @@
 .App-link {
   color: #61dafb;
 }
+
+.neighborhood-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
