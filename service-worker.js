@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/denver-maps/precache-manifest.fd34049e8602fd9451e8f7261752ede6.js"
+  "/denver-maps/precache-manifest.b0cf781461fec5849aef4085ef5043c0.js"
 );
 
 workbox.clientsClaim();
