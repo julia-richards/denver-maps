@@ -13,7 +13,6 @@
     "properties": {
       "id": 0,
       "name": "City Park West",
-      "strokeWeight": 0,
       "fillColor": "#f3765a",
       "writeUp": "North of Cheesman Park and east of North Capitol Hill lies City Park West. The southern boundary of this area is Denver’s own main street, Colfax Avenue. Getting to downtown Denver from here is easy via 16th Avenue, with its painted bicycle lanes that feed directly into the heart of the central business district. City Park West is similar to Capitol Hill in several ways with its many historic stone mansions and vintage 1940’s-era apartment buildings. The Colfax corridor on the southern boundary provides shopping, dining, nightlife, and rapid bus transit.",
       "keyFeats": [
@@ -43,7 +42,6 @@
     "properties": {
       "id": 1,
       "name": "Sloans Lake",
-      "strokeWeight": 0,
       "fillColor": "#f3765a",
       "writeUp": "Another neighborhood in northwest Denver, Sloan’s Lake takes its name from a local park that was once the site of two amusement parks. Until its demise by fire, Manhattan Beach was one of the premiere theme parks of the American West and featured a large roller coaster and a zoo in addition to a steamship that used the expansive waters of Sloan’s Lake for its self-styled voyages. Today, the neighborhood still delights in the park’s presence, which is a host for many summertime events, such as the Colorado Dragon Boat Festival paddleboat races.",
       "keyFeats": [
@@ -76,7 +74,6 @@
     "properties": {
       "id": 2,
       "name": "The Highlands",
-      "strokeWeight": 0,
       "fillColor": "#72c6a1",
       "writeUp": "One of Denver’s most popular and trendy neighborhoods, Highland is located immediately northwest of downtown and Denver Union Station. A multitude of facets make this area desirable for renters, such as its walking distance to downtown Denver, easy access to the Platte River Greenway, and the dozens of independently-owned restaurants, taverns, pubs, and small businesses. Live here and enjoy a 10-minute bicycle coast to downtown Denver and the city’s largest nightlife and entertainment district: Lower Downtown.",
       "keyFeats": [
@@ -120,7 +117,6 @@
     "properties": {
       "id": 3,
       "name": "Jefferson Park",
-      "strokeWeight": 0,
       "fillColor": "#4082ad",
       "writeUp": "Immediately south of the Highland neighborhood, Jefferson Park abuts several major travel sheds, including the South Platte River, Interstate 25, Speer Boulevard, and Federal Boulevard. A recent construction renaissance has refreshed the built-environment of this area throughout the past few years and has brought in new condominium buildings, as well as a large-scale rehabilitation of the original apartment housing stock. The result is a revitalized west-central Denver neighborhood that features many mixed-used amenities. These amenities have furthered enhanced this area’s door-step proximity to downtown Denver, the Lower Highland nightlife district, the South Platte River bike corridor, and the Auraria education campus. Live here and ride on your bike to the South Platte River trail in less than five minutes, or walk to Lower Highland and the Central Platte Valley in less than 15.",
       "keyFeats": [
@@ -158,7 +154,6 @@
     "properties": {
       "id": 4,
       "name": "Auraria",
-      "strokeWeight": 0,
       "fillColor": "#f5b71a",
       "writeUp": "Founded in November 1858, the Auraria neighborhood began its life as a provision and supply town for miners, travelers, and American settlers. The town rivaled its sister city, Denver, then situated entirely across the Cherry Creek channel, and competed with it for territorial dominance. Within two years, the town was incorporated by Denver and became an important commercial node for the growing city as it accommodated switch yards for several railroad companies in addition to powerhouses for local utility generation firms. Over 150 years later the area is now the site of the Auraria Campus, where one community college and two public universities are located. The neighborhood is also home to the Denver Nuggets basketball team, as well and the Colorado Avalanche hockey organization. Other entertainment venues beside the Pepsi Center include Elitch Gardens Theme Park. Several historic structures occupy Auraria, including those located at Ninth Street Historic Park. Almost all apartment living in this location is presently limited to student housing communities.",
       "keyFeats": [
@@ -185,7 +180,6 @@
     "properties": {
       "id": 5,
       "name": "Cap Hill",
-      "strokeWeight": 0,
       "fillColor": "#72c6a1",
       "writeUp": "Capitol Hill is Denver’s second oldest neighborhood, after Five Points-Curtis Park. Rich in artistry, culture, and independent spirit, this neighborhood is the city’s favorite gathering grounds for hipsters and aspiring musicians. On the north end is Denver’s main street, which is home to several music theaters that each play venue to hundreds of big-name music artists every year. The area’s numerous historic structures (many of which are found on local, state, and national registries, such as the Molly Brown House and the Peabody-Whitehead Mansion), combined together with its well-developed social scene and endless number of coffee shops, independent restaurant, pubs, cigar bars, nightclubs and music halls to give Capitol Hill a broad spectrum of character. At nearly 20,000 people per square mile, Capitol Hill’s population density is greater than the citywide density averages for San Francisco, Boston, and Chicago. On the southern periphery is the Governor’s Park Historic District where stone mansions, adorned gargoyles, statues, and fountains add to the neighborhood’s Victorian feel.",
       "keyFeats": [
@@ -214,7 +208,6 @@
     "properties": {
       "id": 6,
       "name": "Civic Center",
-      "strokeWeight": 0,
       "fillColor": "#f5b71a",
       "writeUp": "Just south of downtown Denver lies Civic Center. Although most people tend to be more familiar with its unofficial title, The Golden Triangle, Civic Center is probably the most appropriate description as the City and County of Denver’s original municipal hall and court building are located here. In this neighborhood you will find a limited assortment of character due to its close proximity to downtown Denver, where a zoning spillover has given Civic Center a heavily urbanized personality and flavor. The Denver Public Library’s central branch library, Denver Art Museum, and the History Colorado Center are all located within the three angles of this triangle-shaped area. The recent post-modern architecture found here has given this area a sense of modernity and help it fit seamlessly into the city’s overall sense of sophistication and progressiveness.",
       "keyFeats": [
@@ -248,7 +241,6 @@
     "properties": {
       "id": 7,
       "name": "City Park",
-      "strokeWeight": 0,
       "fillColor": "#4082ad",
       "writeUp": "Another neighborhood in northwest Denver, Sloan’s Lake takes its name from a local park that was once the site of two amusement parks. Until its demise by fire, Manhattan Beach was one of the premiere theme parks of the American West and featured a large roller coaster and a zoo in addition to a steamship that used the expansive waters of Sloan’s Lake for its self-styled voyages. Today, the neighborhood still delights in the park’s presence, which is a host for many summertime events, such as the Colorado Dragon Boat Festival paddleboat races.",
       "keyFeats": [
@@ -299,7 +291,6 @@
     "properties": {
       "id": 8,
       "name": "Cherry Creek",
-      "strokeWeight": 0,
       "fillColor": "#72c6a1",
       "writeUp": "Cherry Creek is a city neighborhood with rich variety. The shopping here is spectacular. An assortment of retail and amenity offerings make it possible to both cater to those with simple tastes and aggressive spending budgets. Almost 400 restaurants, pubs, cabarets, night clubs, retail shops, and other small business occupy the central portion of this neighborhood and offer a dynamic setting for diners and shoppers. Known as Cherry Creek North, this shopping district is Denver’s second most popular bucket-list item for out-of-state visitors. It’s safe to say that Cherry Creek provides fancy atmosphere for all.",
       "keyFeats": [
@@ -327,7 +318,6 @@
     "properties": {
       "id": 9,
       "name": "UpTown",
-      "strokeWeight": 0,
       "fillColor": "#4082ad",
       "writeUp": "Better known as “Uptown,” North Capitol Hill is situated directly next to downtown Denver. Close-up views of the city skyline make for breathtaking evening walks, while the immediacy of downtown Denver makes for an easy commute for people who work there. Denver’s second-most visited tourist destination, the 1.25-mile-long 16th Street Mall, is located at the far west end of the neighborhood and offers free bus service to and from Denver Union Station, located on the opposite end of downtown Denver. Known as the Free Mall Ride, this bus service stops at every intersection along the way to drop off and pick up passengers.",
       "keyFeats": [
@@ -367,7 +357,6 @@
     "properties": {
       "id": 10,
       "name": "University Park",
-      "strokeWeight": 0,
       "fillColor": "#f3765a",
       "writeUp": "Located at the southern end of Denver proper, University Park is centered around the University of Denver's historic Chamberlin Observatory. The Observatory was built in 1893 shortly after DU's relocation from central downtown to its current campus, which was once a potato farm. In the late 19th century, there was not easily accessible atomic clocks or the Internet. As such, the Observatory was one of DU's most reliable sources of revenue through selling the time to the railroads. Staff at Chamberlin did this by precisely measuring the angle above the horizon of the sun and stars and sending the result of their calculations via telegram to the nearby train station. The station would then recalibrate their clock to ensure the train was running according to schedule. Today, University Park is known for its generous elbow room and close relative proximity to the Denver Technological Center. The view plane levels out tremendously due to the single-family architecture that predominates this tract of the city. DU is within walking distance, while two major light rail stations with a park-and-ride feature can be quickly accessed by motor vehicle. Anyone desiring either an exurban feel or being within a reasonably close distance to the DTC would likely be right at home in University Park.",
       "keyFeats": [
@@ -403,7 +392,6 @@
     "properties": {
       "id": 11,
       "name": "Lincoln Park",
-      "strokeWeight": 0,
       "fillColor": "#4082ad",
       "writeUp": "Lincoln Park is Denver’s biggest gathering ground for the city’s many art aficionados. Nearly 40 galleries occupy the Santa Fe Arts District, which runs directly through the heart of this neighborhood and attracts an invariably large number of those who appreciate creative disciplines on the first Friday of every month. A light rail station located at 10th Avenue and Osage Street serves the neighborhood and provides a car-free commute to the Denver Technological Center as well as the suburban communities of Englewood and Littleton. Downtown Denver is a short walk away, as is the Auraria educational campus.",
       "keyFeats": ["Light rail transit", "Sante Fe Art District"]
@@ -439,7 +427,6 @@
     "properties": {
       "id": 12,
       "name": "Congress Park",
-      "strokeWeight": 0,
       "fillColor": "#f5b71a",
       "writeUp": "Cerebral. Sophisticated. Responsible. If any list of words could be utilized to personify the character of Congress Park it could very well include those three. This east-central Denver neighborhood is known for the presence of a large and nationally-known book retailer, several lecture halls, and two high-performing public elementary schools, as well as its close proximity to Denver East High School, two of the country’s top holistic medicine post-secondary educational institutes, and multiple museums and historic landmarks. Denver’s main street, Colfax Avenue, is the established north boundary of this neighborhood and has a plethora of nightlife venues. Also, shopping for healthy and organic grocery products in Congress Park is easy, thanks to the three natural food stores that are located in the neighborhood’s general vicinity.",
       "keyFeats": ["Congress Park Recreation Center", "SoCo Nightlife District"]
@@ -481,7 +468,6 @@
     "properties": {
       "id": 13,
       "name": "Baker",
-      "strokeWeight": 0,
       "fillColor": "#72c6a1",
       "writeUp": "Head south out of downtown Denver and within one mile of your journey you will arrive in the historic Baker neighborhood. No other area in the city has such a balanced genre of aesthetic flavors. On the west end resides the South Platte River, Interstate 25, Union Pacific and BNSF Railway’s Consolidated Main Line, a light rail transportation corridor, and several industrial parks. On the east end is a beautiful and distinct residential sector that offers a sharp, chromatic contrast thanks to its rich civic detail, human-scale architecture, main-street retail shopping, hundred-year-old trees, flagstone sidewalks, and presence of over one-hundred historic homes, which have earned the southeastern corner of this neighborhood an official historic area designation. Although predominately zoned industrial at the present time, the west end of Baker is undergoing rapid redevelopment thanks to the mass transit rail line. Commercial buildings here are being bought and repurposed as residential lofts, boutique office space, and mixed-use spaces. All-inclusive fitness centers, art galleries, doggie daycares, indoor paintball battlefields, and post-modern style housing stock can now be found occupying structures and land parcels that were formerly used by industrial-type businesses. The transition is integrating both east and west Baker and is establishing a consistent land-use pattern that is adding to Baker’s already-dynamic feel. On the west end of Baker is the South Broadway shopping and nightlife district, where pubs, shops, and other small businesses occupy a mile-plus-long stretch of Denver’s Lincoln/Broadway Street corridor. A rapid-service bus line also here also provides easy access to downtown Denver during peak service hours. All of these key features help Baker earn its distinction of being one of Denver’s top neighborhoods.",
       "keyFeats": [
@@ -515,7 +501,6 @@
     "properties": {
       "id": 14,
       "name": "University",
-      "strokeWeight": 0,
       "fillColor": "#72c6a1",
       "writeUp": "Across Interstate 25 from Washington Park and Washington Park West, this neighborhood comes with a suburban feel and is home to University of Denver. The DU campus occupies a considerable portion of this area and brings an invigorating ambiance. A light rail line is located at the north end and features a large park-and-ride. This transit route provides service to and from downtown Denver and the Denver Technological Center.",
       "keyFeats": [
@@ -554,7 +539,6 @@
     "properties": {
       "id": 15,
       "name": "Central Downtown",
-      "strokeWeight": 0,
       "fillColor": "#f3765a",
       "writeUp": "Downtown Denver is the state’s largest employment center and is also the 10th biggest central business district in the entire nation. Several notable multinational firms are headquartered here in addition to the Colorado Rockies Major League Baseball organization. Both downtown Denver and Union Station are served by mass transit rail lines that radiate into the city center from the southern metro area suburbs of Lone Tree, Centennial, Englewood, Greenwood Village, Littleton, Sheridan, and Englewood. Downtown Denver is additionally served by a rail transit line that originates from the eastern suburb of Aurora, while Union Station is additionally served by a rail line that begins in the mountain foothills town of Golden and passes through the western Denver suburb of Lakewood before reaching the Denver Union Station terminus. Starting 2016, the metro area’s public transit agency will begin phasing in an electrified commuter rail service for the northern suburbs of Denver. The opening of these rail lines will commence in incremental stages throughout a period of about half a decade and will provide rapid, fixed-route travel options between the Union Station neighborhood and Denver International Airport, as well as the cities of Wheat Ridge, Arvada, Westminster, Aurora, Northglenn, Thornton, and Welby. Aside from its growing multi-modal ethos, downtown Denver has one of the country’s most highly cultured social environments. The historic Colorado state capitol building is positioned at the southeastern corner of the central business district and lends a strong essence of civic pride. Many other sub-zones and sub-communities are located in both downtown Denver and the Union Station neighborhood and include the Lower Downtown nightlife and entertainment district, which is the largest in the state among the 16th Street Mall shopping district, Colorado’s number one destination for tourists.",
       "keyFeats": [
@@ -589,7 +573,6 @@
     "properties": {
       "id": 16,
       "name": "West Highlands",
-      "strokeWeight": 0,
       "fillColor": "#f5b71a",
       "writeUp": "Located in northwest Denver, West Highland has a relatively slower pace of life when compared to other urbanized areas of the city. Its location on the western end of the Denver city limits makes for easy commuting to and from the Rocky Mountain foothills, where dozens of popular hiking trails, such as those at White Ranch, North Table Mountain, and Dinosaur Ridge, are available for taking either a quick and easy day hike or a day-long backpacking adventure. Although a touch calmer in its demeanor, West Highland is by no means devoid of social complexity and enthusiasm. A former streetcar corridor, 32nd Avenue, is West Highland’s main street and is famous for its many pubs, taverns, and small businesses. On the north end of the neighborhood begins the Tennyson Street Art District, where the talents of numerous local artists and musicians are celebrated on designated days and weekends throughout each month. The Lower Highland (LoHi) nightlife district is also located just a few minutes away by car, bus, or bike.",
       "keyFeats": [
@@ -643,7 +626,6 @@
     "properties": {
       "id": 17,
       "name": "Wash Park",
-      "strokeWeight": 0,
       "fillColor": "#4082ad",
       "writeUp": "Washington Park begins just south of the Cherry Creek channel and bikeway and is located about two miles southeast of downtown Denver. From this point the neighborhood extends east for a rough distance of about six city block lengths and stretches all the way south to Interstate 25. One of Denver’s largest and most celebrated city parks occupies a good portion of this neighborhood and is an outstanding convenience for endorphin junkies and athletes. University of Denver is not too far away and has made the area a lodging destination for college professors and staff. About three miles southeast of the Washington Park neighborhood is the Denver Technological Center, which can be reached by either highway or light rail.",
       "keyFeats": [
@@ -671,7 +653,6 @@
     "properties": {
       "id": 18,
       "name": "Speer",
-      "strokeWeight": 0,
       "fillColor": "#f3765a",
       "writeUp": "Often misclassified as being part of the adjacent Baker and Washington Park West neighborhoods, Speer is distinguished from the rest of the city by its recognition as being the city’s most popular neighborhoods for apartment renters. According to statistical data gathered by several housing search sites, Speer is the top target for apartment renters. Like Baker, this charming neighborhood is located along Denver’s South Broadway, or “SoBo,” shopping and nightlife district where a tremendous variety of eateries, clothing retailers, salons, bars, theaters, and nightclubs occupy a 14-block stretch of the Broadway/Lincoln Street corridor. Beautiful single family homes intermingle with smaller apartment communities to help bring balance to this area’s population density.",
       "keyFeats": [
@@ -709,7 +690,6 @@
     "properties": {
       "id": 19,
       "name": "Cheesman Park",
-      "strokeWeight": 0,
       "fillColor": "#4082ad",
       "writeUp": "Hearing about the old haunts and legends of Cheesman Park can be an enchanting experience to nearly anyone, whether interested in history or not. The old-time ambiance of this neighborhood is easy to appreciate, thanks to the commonplace stone architecture, wrought-iron fences, elegant gardens, and century-old shade trees that dot the area. The centerpiece and crown jewel of this neighborhood is Cheesman Park itself, which offers runners and walkers a heavily-canopied, soft-surface running trail and an expansive sea of lush, green grass that makes for an exciting round of volleyball.",
       "keyFeats": ["Cheesman Park", "Denver Botanic Gardens"]
@@ -735,7 +715,6 @@
     "properties": {
       "id": 20,
       "name": "West Wash Park",
-      "strokeWeight": 0,
       "fillColor": "#f5b71a",
       "writeUp": "Positioned in southcentral Denver, Washington Park West is a trendy neighborhood with plenty of good vibes. Despite being four neighborhoods out from the Central Business District, this area tends to attract many urban professionals. Both a light rail line and Interstate 25 run along the southern edge offering direct, multi-modal access to downtown Denver and the Denver Technological Center, which are two of the Denver metropolitan area’s largest employment centers. Four different light rail stations are located either in or near the neighborhood. The athletically-inclined will appreciate living close to Washington Park itself, a local gem that draws people from all over the city with its 2.6-mile crushed-gravel running trail, eight tennis courts, year-round swimming pool, large recreation center, soccer fields, basketball courts, and volleyball pads. Due to its central location, many outdoor enthusiasts and personal wellness social-networking groups have also made Washington Park their usual rendezvous point. For post-recreational-meetup gatherings, many pubs and eateries are conveniently scattered throughout Washington Park West, with a large concentration of these establishments being located at the western limits of the neighborhood, where the southern portion of Denver’s South Broadway nightlife district is located. Also popular with the Washington Park regulars is the South Pearl Street business district, which features charming, main-street-style buildings.",
       "keyFeats": [
@@ -776,7 +755,6 @@
     "properties": {
       "id": 21,
       "name": "Five Points",
-      "strokeWeight": 0,
       "fillColor": "#72c6a1",
       "writeUp": "Say hello to Denver’s oldest residential neighborhood. Five Points has a highly rich heritage that is made evident by its numerous stone mansions and 1880’s-era brick-construction commercial structures, many of which still bear marks of the distant past, such as their sun-worn three-story-tall painted wall advertisements, rooftop lighting rods, and wrought-iron fire escapes. Sadly, the name of this historic neighborhood is slowly falling into disuse, as many condominium developers have recently begun informally rebranding several areas of this neighborhood with contemporary-sounding designations. River North, or “RiNo”, is the name of an art district that occupies the western half of Five Points. Ballpark, a stadium and sports district, overlays the far southwest corner, while an urban infill district named Prospect abuts both Union Station and Highland on the far west end. A light rail transit line serves the eastern half of Five Points and runs along the main commercial strip of this neighborhood. Nomenclature concerns and new luxury condominiums developments aside, Five Points retains a robust sense of charm and antiquity thanks to the Welton Street nightlife corridor, which, at one point, had as many as 50 independent music theaters and taverns once frequented by a large list of famous jazz artists such as Duke Ellington, Miles Davis, Nat King Cole, and Dizzy Gillespie. With a close proximity to downtown Denver, this neighborhood also makes it an ideal location for those wishing to be near the central business district of the city.",
       "keyFeats": [

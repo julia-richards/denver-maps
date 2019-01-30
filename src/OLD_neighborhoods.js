@@ -1702,7 +1702,6 @@ const newFormat = old.map((neighborhood, index) => {
     properties: {
       id: index,
       name: neighborhood.name,
-      strokeWeight: neighborhood.strokeWeight,
       fillColor: neighborhood.fillColor,
       writeUp: neighborhood.writeUp,
       keyFeats: neighborhood.keyFeats
